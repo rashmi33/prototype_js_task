@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" type="text/css" href="assets/home.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="assets/popup.js"></script>
+	  <script src="assets/hover.js"></script>
+	  <script src="assets/no_reload.js"></script>
+	</head>
+
+	<body id="homepage">
+	  <div class="navigation">
+	    <a href="#" class="navigation-item" onclick="homeFunc(); return true;">Logo</a>
+	    <a href="about_us.html" class="navigation-item" onclick="aboutFunc(); return true;">About Us</a>
+	    <a href="contact_us.html" class="navigation-item" onclick="contactFunc(); return true;">Contact Us</a>
+	  </div>
+		<div id="main">
+		  <div id="top-image">
+				<img src="assets/images/slider.jpg" style="width:100%;min-height:350px;max-height:600px;">
+			</div>
+			<div id="team">
+				<h2>Our Team</h2>
+				<p>Meet our brilliant team</p>
+				<div class="team-members"><br>
+					<div class="members">
+						<img src="assets/images/team.jpg" style="width:50%" class="img-circle img-hover-opacity">
+						<h3>Rashmi Godawat</h3>
+						<p>Senior Test Engineer</p>
+					</div>
+					<div class="members">
+						<img src="assets/images/team.jpg" style="width:50%" class="img-circle img-hover-opacity">
+						<h3>Rashmi Godawat</h3>
+						<p>Senior Test Engineer</p>
+					</div>
+					<div class="members">
+						<img src="assets/images/team.jpg" style="width:50%" class="img-circle img-hover-opacity">
+						<h3>Rashmi Godawat</h3>
+						<p>Senior Test Engineer</p>
+					</div>
+					<div class="members">
+						<img src="assets/images/team.jpg" style="width:50%" class="img-circle img-hover-opacity">
+						<h3>Rashmi Godawat</h3>
+						<p>Senior Test Engineer</p>
+					</div>
+				</div>
+			</div>
+			<div id="work">
+				<div class="works">
+					<br>
+					<br>
+					<h2>Our Work</h2>
+					<p id="work-p">The work we do is awesome. We believe in learning and growing.The work we do is awesome. We believe in learning and growing.The work we do is awesome. We believe in learning and growing.The work we do is awesome. We believe in learning and growing.The work we do is awesome. We believe in learning and growing.The work we do is awesome. We believe in learning and growing.The work we do is awesome. We believe in learning and growing.</p>
+				</div>
+				<div class="works">
+					<div><br>
+						<img src="assets/images/work1.jpg" style="width:100%" class="img-hover-opacity">
+					</div>
+					<div class= "works-text">
+						<h4>Customer1</h4>
+						<h5>IT</h5>
+						<p>Dummy</p>
+						<p>Dummy</p>
+					</div>
+				</div>
+				<div class="works">
+					<div><br>
+						<img src="assets/images/work2.jpg" style="width:100%" class="img-hover-opacity">
+					</div>
+					<div class= "works-text">
+						<h4>Customer2</h4>
+						<h5>IT</h5>
+						<p>Dummy</p>
+						<p>Dummy</p>
+					</div>
+				</div>
+				<div class="works">
+					<div><br>
+						<img src="assets/images/work3.jpg" style="width:100%" class="img-hover-opacity">
+					</div>
+					<div class= "works-text">
+						<h4>Customer3</h4>
+						<h5>IT</h5>
+						<p>Dummy</p>
+						<p>Dummy</p>
+					</div>
+				</div>
+			</div>
+			<div id="pricing">
+				<br><br><br>
+				<h2>Pricing</h2>
+				<p>Choose a pricing plan that fits your needs.</p>
+				<br>
+				<input type="text" id="username1"><br>
+				<div class="prices">
+					<ul class="decor">
+						<li ><p class="price-xlarge">Basic</p></li>
+						<li class="price-padding"><b>10GB</b> Storage</li>
+						<li class="price-padding"><b>10</b> Emails</li>
+						<li class="price-padding"><b>10</b> Domains</li>
+						<li class="price-padding"><b>Endless</b> Support</li>
+						<li class="price-padding price-xlarge"><i class="fa fa-usd"> 10 per month</i></li>
+						<li>
+							<button id="signup1" onclick="login()" class="button-padding">Sign Up</button>
+							<div id="myFormModal" class="modal">
+						    <div class="modal-content">
+						      <span class="formclose">&times;</span>
+						      <form id="modalForm">
+						      	<label>UserName</label>
+						      	<input type="text" name="username" id="username"><br>
+						      	<label>Password</label>
+						      	<input type="password" name="passowrd" id="password"><br>
+						      	<input type="submit" name="submit" value="Submit">
+						      </form>
+						    </div>
+						  </div>
+						</li>
+					</ul>
+				</div>
+				<div class="prices">
+					<ul class="decor">
+						<li><p class="price-xlarge">Pro</p></li>
+						<li class="price-padding"><b>20GB</b> Storage</li>
+						<li class="price-padding"><b>30</b> Emails</li>
+						<li class="price-padding"><b>20</b> Domains</li>
+						<li class="price-padding"><b>Endless</b> Support</li>
+						<li class="price-padding price-xlarge"><i class="fa fa-usd"> 25 per month</i></li>
+						<li>
+							<button id="signup2" onclick="login()" class="button-padding">Sign Up</button>
+							<div id="myModal" class="modal">
+						    <div class="modal-content">
+						      <span class="close">&times;</span>
+						      <p>Hello, This is Sign-Up modal.</p>
+						    </div>
+						  </div>
+						</li>
+					</ul>
+				</div>
+				<div class="prices">
+					<ul class="decor">
+						<li><p class="price-xlarge">Premium</p></li>
+						<li class="price-padding"><b>30GB</b> Storage</li>
+						<li class="price-padding"><b>40</b> Emails</li>
+						<li class="price-padding"><b>30</b> Domains</li>
+						<li class="price-padding"><b>Endless</b> Support</li>
+						<li class="price-padding price-xlarge"><i class="fa fa-usd"> 50 per month</i></li>
+						<li>
+							<button id="signup3" onclick="login()" class="button-padding">Sign Up</button>
+							<div id="myModal" class="modal">
+						    <div class="modal-content">
+						      <span class="close">&times;</span>
+						      <p>Hello, This is Sign-Up modal.</p>
+						    </div>
+						  </div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="contact-us">
+				<div class="contact-align">
+					<br><br>
+					</i><h2>Contact Us</h2>
+					<h3>Address</h3>
+					<p>Please feel free to contact us below.</p>
+					<p><i class="fa fa-map-marker"></i> Udaipur, Rajasthan</p>
+					<p><i class="fa fa-phone"></i> +91 8764138321</p>
+					<p><i class="fa fa-envelope-o"></i> test@test.com</p>
+				</div>
+				<div class="form-hw contact-align">
+					<form id="contact-us-form" target="_blank">
+						<div>
+							<label>Name</label>
+							<input type="text" name="name" class="textbox" required>
+						</div>
+						<div>
+							<label>Email</label>
+							<input type="text" name="email" class="textbox" required>
+						</div>
+						<div>
+							<label>Message</label>
+							<input type="text" name="message" class="textbox" required>
+						</div>
+						<input type="checkbox" checked name="Like">
+						<label>I like it!!!</label>
+						<button type="submit" class="button-align">Submit</button>
+					</form>
+				</div>
+			</div>
+			<div id="google-maps" style="width: 100%; height: 420px; position: relative; overflow: hidden;">
+        <script type="text/javascript">
+					function myMap()
+					{
+						myCenter=new google.maps.LatLng(24.5854, -73.7125);
+						var mapOptions= {
+						  center:myCenter,
+						  zoom:12, scrollwheel: false, draggable: false,
+						  mapTypeId:google.maps.MapTypeId.ROADMAP
+						};
+						var map=new google.maps.Map(document.getElementById("google-maps"),mapOptions);
+						var marker = new google.maps.Marker({
+						  position: myCenter,
+						});
+						marker.setMap(map);
+					}
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrRnyWMtvbFJzvl957N0AIIVdf1MZJ5ZE&amp;callback=myMap"></script>
+			</div>
+		</div>
+		<footer id="footer">
+			<br>
+			<h3>Follow Us</h3>
+			<a href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+			<a href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+			<a href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+			<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+		</footer>
+	</body>
+</html>
