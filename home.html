@@ -4,11 +4,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	  <link rel="stylesheet" type="text/css" href="assets/home.css">
+	  <link rel="stylesheet" type="text/css" href="assets/stylesheets/home.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	  <script src="assets/popup.js"></script>
-	  <script src="assets/hover.js"></script>
-	  <script src="assets/no_reload.js"></script>
+	  <script src="assets/javascripts/home.js"></script>
 	</head>
 
 	<body id="homepage">
@@ -103,7 +101,7 @@
 						<li class="price-padding"><b>Endless</b> Support</li>
 						<li class="price-padding price-xlarge"><i class="fa fa-usd"> 10 per month</i></li>
 						<li>
-							<button id="signup1" onclick="login()" class="button-padding">Sign Up</button>
+							<button id="signup1" onclick="getDataFromModalPopupForm()" class="button-padding">Sign Up</button>
 							<div id="myFormModal" class="modal">
 						    <div class="modal-content">
 						      <span class="formclose">&times;</span>
@@ -128,7 +126,7 @@
 						<li class="price-padding"><b>Endless</b> Support</li>
 						<li class="price-padding price-xlarge"><i class="fa fa-usd"> 25 per month</i></li>
 						<li>
-							<button id="signup2" onclick="login()" class="button-padding">Sign Up</button>
+							<button id="signup2" onclick="openModalPopup()" class="button-padding">Sign Up</button>
 							<div id="myModal" class="modal">
 						    <div class="modal-content">
 						      <span class="close">&times;</span>
@@ -147,7 +145,7 @@
 						<li class="price-padding"><b>Endless</b> Support</li>
 						<li class="price-padding price-xlarge"><i class="fa fa-usd"> 50 per month</i></li>
 						<li>
-							<button id="signup3" onclick="login()" class="button-padding">Sign Up</button>
+							<button id="signup3" onclick="openModalPopup()" class="button-padding">Sign Up</button>
 							<div id="myModal" class="modal">
 						    <div class="modal-content">
 						      <span class="close">&times;</span>
@@ -218,3 +216,8 @@
 		</footer>
 	</body>
 </html>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		var home = new JS.Home();
+	});
+</script>
