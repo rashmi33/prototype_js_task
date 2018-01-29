@@ -4,6 +4,7 @@
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	  <link rel="stylesheet" type="text/css" href="assets/stylesheets/home.css"> 
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="assets/javascripts/contact_us.js"></script>
 	</head>
 
 	<body id="contact_us">
@@ -42,7 +43,13 @@
 						</div>
 						<input type="checkbox" checked name="Like">
 						<label>I like it!!!</label>
-						<button type="submit" class="button-align">Submit</button>
+						<button type="submit" id="contact-button" class="button-align">Submit</button>
+						  <div id="contact-modal" class="modal">
+						    <div class="modal-content">
+						      <span class="close">&times;</span>
+						      <p>Details submitted successfully.</p>
+						    </div>
+						  </div>
 					</form>
 				</div>
 			</div>
@@ -57,3 +64,8 @@
 		</footer>
 	</body>
 </html>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		var contact = new JS.Contact();
+	});
+</script>
