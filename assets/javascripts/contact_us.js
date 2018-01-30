@@ -41,6 +41,7 @@ JS.Contact.prototype = {
 			  $('#contact-us-form').each(function(){
           this.reset();
         });
+        return false;
 			}
 	  });
   }

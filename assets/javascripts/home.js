@@ -44,7 +44,7 @@ JS.Home.prototype = {
 
 	  window.onclick = function(event) {
 	    if (event.target == form2) {
-	        form2.style.display = 'none';
+	      form2.style.display = 'none';
 	    } 
 	  }
   },
@@ -75,9 +75,9 @@ JS.Home.prototype = {
   	$('#team img').hover(
       function(){
         $(this).next().css('visibility','visible');
-       }, function(){
+      }, function(){
         $(this).next().css('visibility','hidden');
-       }
+      }
     );
   },
 
@@ -95,6 +95,7 @@ JS.Home.prototype = {
 			$('#contact-us #contact-us-form').each(function(){
         this.reset();
       });
+    return false;
 		});
 	}
 }
