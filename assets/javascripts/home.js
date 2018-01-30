@@ -11,6 +11,7 @@ JS.Home.prototype = {
 		this.getDataFromModalPopupForm();
 		this.addHoveronTeamImages();
 		this.addHoveronFooterText();
+		this.clearContactFormData();
 	},
 
 	changeTextColorOnHover: function(){
@@ -53,8 +54,12 @@ JS.Home.prototype = {
   	var username = document.getElementById('username').value;
   	var display = document.getElementById('username1');
     display.value= username;
+    $('#myFormModal #modalForm').each(function(){
+      this.reset();
+    });
     return false;
     });
+
 	  var form1 = document.getElementById('myFormModal');
 	  var btn1 = document.getElementById('signup1');
 	  var span1 = document.getElementsByClassName('formclose')[0];
@@ -83,5 +88,13 @@ JS.Home.prototype = {
 	  $('p').mouseout(function(){
 	    $('#footer p').css('background-color', 'black');
 	  });
+	},
+
+	clearContactFormData: function(){
+		$('#contact-us #contact-us-form').submit(function() {
+			$('#contact-us #contact-us-form').each(function(){
+        this.reset();
+      });
+		});
 	}
 }

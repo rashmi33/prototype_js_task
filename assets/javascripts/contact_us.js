@@ -38,6 +38,9 @@ JS.Contact.prototype = {
 			      form.style.display = 'none';
 			    } 
 			  }
+			  $('#contact-us-form').each(function(){
+          this.reset();
+        });
 			}
 	  });
   }
