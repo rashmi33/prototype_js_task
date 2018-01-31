@@ -132,7 +132,7 @@ img {
 }
 
 .decor {
-  list-style: none
+  list-style: none;
 }
 
 .form-hw {
@@ -174,7 +174,7 @@ form {
 .about-text {
   color: gray!important;
   text-align: center!important;
-  background-color: black;
+  background-color: white;
 }
 
 .contact-us {
@@ -212,6 +212,10 @@ form {
   width: 80%;
 }
 
+.modal-table-text {
+  margin: 0 auto;
+}
+
 .close {
   color: #aaaaaa;
   float: right;
@@ -238,4 +242,19 @@ form {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.parallax {
+  z-index: 1.5;
+  height: 500px;
+  border-radius: 0%!important;
+}
+
+.parallax-text {
+  color: pink;
+  text-align: center;
+}
+
+.img-class {
+  opacity: 1;
 }

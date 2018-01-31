@@ -12,6 +12,7 @@ JS.Home.prototype = {
 		this.addHoveronTeamImages();
 		this.addHoveronFooterText();
 		this.clearContactFormData();
+		this.addImageFadeOnScroll();
 	},
 
 	changeTextColorOnHover: function(){
@@ -51,10 +52,10 @@ JS.Home.prototype = {
 
   getDataFromModalPopupForm: function(){
   	$('#myFormModal #modalForm').submit(function() {
-  	var username = document.getElementById('username').value;
-  	var display = document.getElementById('username1');
-    display.value= username;
-    $('#myFormModal #modalForm').each(function(){
+	  	var username = document.getElementById('username').value;
+	  	var display = document.getElementById('#modalTableBody');
+	    $('#pricing #modalTable').append('<tr><td>'+username+'</td></tr>');
+	    $('#myFormModal #modalForm').each(function(){
       this.reset();
     });
     return false;
@@ -97,5 +98,13 @@ JS.Home.prototype = {
       });
     return false;
 		});
+	},
+
+  addImageFadeOnScroll: function(){
+    $(window).scroll( function(){
+      $('#top-image').animate({'opacity':'0.5'},1500); 
+      $('#top-image').animate({'opacity':'0.3'});  
+      $('#top-image').animate({'opacity':'1'},1500); 
+    }); 
 	}
 }
